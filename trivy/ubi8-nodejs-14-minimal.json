@@ -1,0 +1,3594 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "registry.redhat.io/ubi8/nodejs-14-minimal",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "redhat",
+      "Name": "8.6"
+    },
+    "ImageID": "sha256:a801197576c5fbad013b4401357a80c068a3ee7473b185e459ba0dabddfa4ff9",
+    "DiffIDs": [
+      "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6",
+      "sha256:8e0e04b5c700a86f4a112f41e7e767a9d7c539fe3391611313bf76edb07eeab1",
+      "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+    ],
+    "RepoTags": [
+      "registry.redhat.io/ubi8/nodejs-14-minimal:latest"
+    ],
+    "RepoDigests": [
+      "registry.redhat.io/ubi8/nodejs-14-minimal@sha256:724863947edb16c7b97dd032e3a5beff1a1b61baf97a3c3e1a5e037c03721815"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "87c2ff536d1a310844ceff090db0e852fc19558e518cdb64164a9f3866aff72e",
+      "created": "2022-06-20T11:55:04.950075343Z",
+      "docker_version": "1.13.1",
+      "history": [
+        {
+          "created": "2022-06-17T04:19:22Z",
+          "comment": "Imported from -"
+        },
+        {
+          "created": "2022-06-17T04:19:30Z"
+        },
+        {
+          "created": "2022-06-20T11:55:04Z",
+          "created_by": "#(imagebuilder)\nsleep 86400"
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6",
+          "sha256:8e0e04b5c700a86f4a112f41e7e767a9d7c539fe3391611313bf76edb07eeab1",
+          "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/bash"
+        ],
+        "Env": [
+          "APP_ROOT=/opt/app-root",
+          "HOME=/opt/app-root/src",
+          "NPM_RUN=start",
+          "PLATFORM=el8",
+          "NODEJS_VERSION=14",
+          "NAME=nodejs",
+          "SUMMARY=Minimal image for running Node.js 14 applications",
+          "DESCRIPTION=Node.js 14 available as container is a base platform for running various Node.js 14 applications and frameworks. Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.",
+          "NPM_CONFIG_PREFIX=/opt/app-root/src/.npm-global",
+          "PATH=/opt/app-root/src/node_modules/.bin/:/opt/app-root/src/.npm-global/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "container=oci"
+        ],
+        "Hostname": "805b1da3b398",
+        "Labels": {
+          "architecture": "x86_64",
+          "build-date": "2022-06-20T11:53:54.285285",
+          "com.redhat.build-host": "cpt-1006.osbs.prod.upshift.rdu2.redhat.com",
+          "com.redhat.component": "nodejs-14-minimal-container",
+          "com.redhat.deployments-dir": "/opt/app-root/src",
+          "com.redhat.dev-mode": "DEV_MODE:false",
+          "com.redhat.dev-mode.port": "DEBUG_PORT:5858",
+          "com.redhat.license_terms": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI",
+          "description": "Node.js 14 available as container is a base platform for running various Node.js 14 applications and frameworks. Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.",
+          "distribution-scope": "public",
+          "help": "For more information visit https://github.com/sclorg/s2i-nodejs-container",
+          "io.k8s.description": "Node.js 14 available as container is a base platform for running various Node.js 14 applications and frameworks. Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.",
+          "io.k8s.display-name": "Node.js 14 Minimal",
+          "io.openshift.expose-services": "8080:http",
+          "io.openshift.s2i.scripts-url": "image:///usr/libexec/s2i",
+          "io.openshift.tags": "builder,nodejs,nodejs14",
+          "io.s2i.scripts-url": "image:///usr/libexec/s2i",
+          "maintainer": "SoftwareCollections.org <sclorg@redhat.com>",
+          "name": "ubi8/nodejs-14-minimal",
+          "release": "60",
+          "summary": "Minimal image for running Node.js 14 applications",
+          "url": "https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/nodejs-14-minimal/images/1-60",
+          "vcs-ref": "f83ee8f3e2fd65087d9b528bfa74ff75dea73b26",
+          "vcs-type": "git",
+          "vendor": "Red Hat, Inc.",
+          "version": "1"
+        },
+        "User": "1001",
+        "WorkingDir": "/opt/app-root/src",
+        "ArgsEscaped": true
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "registry.redhat.io/ubi8/nodejs-14-minimal (redhat 8.6)",
+      "Class": "os-pkgs",
+      "Type": "redhat",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2019-12900",
+          "PkgName": "bzip2-libs",
+          "InstalledVersion": "1.0.6-26.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-12900",
+          "Title": "bzip2: out-of-bounds write in function BZ2_decompress",
+          "Description": "BZ2_decompress in decompress.c in bzip2 through 1.0.6 has an out-of-bounds write when there are many selectors.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 4
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-07/msg00040.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00050.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00078.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-12/msg00000.html",
+            "http://packetstormsecurity.com/files/153644/Slackware-Security-Advisory-bzip2-Updates.html",
+            "http://packetstormsecurity.com/files/153957/FreeBSD-Security-Advisory-FreeBSD-SA-19-18.bzip2.html",
+            "https://access.redhat.com/security/cve/CVE-2019-12900",
+            "https://bugs.launchpad.net/ubuntu/+source/bzip2/+bug/1834494",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12900",
+            "https://gitlab.com/federicomenaquintero/bzip2/commit/74de1e2e6ffc9d51ef9824db71a8ffee5962cdbc",
+            "https://lists.apache.org/thread.html/ra0adb9653c7de9539b93cc8434143b655f753b9f60580ff260becb2b@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rce8cd8c30f60604b580ea01bebda8a671a25c9a1629f409fc24e7774@%3Cuser.flink.apache.org%3E",
+            "https://lists.apache.org/thread.html/rda98305669476c4d90cc8527c4deda7e449019dd1fe9936b56671dd4@%3Cuser.flink.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2019/06/msg00021.html",
+            "https://lists.debian.org/debian-lts-announce/2019/07/msg00014.html",
+            "https://lists.debian.org/debian-lts-announce/2019/10/msg00012.html",
+            "https://lists.debian.org/debian-lts-announce/2019/10/msg00018.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-12900",
+            "https://seclists.org/bugtraq/2019/Aug/4",
+            "https://seclists.org/bugtraq/2019/Jul/22",
+            "https://security.FreeBSD.org/advisories/FreeBSD-SA-19:18.bzip2.asc",
+            "https://support.f5.com/csp/article/K68713584?utm_source=f5support&amp;utm_medium=RSS",
+            "https://ubuntu.com/security/notices/USN-4038-1",
+            "https://ubuntu.com/security/notices/USN-4038-2",
+            "https://ubuntu.com/security/notices/USN-4038-3",
+            "https://ubuntu.com/security/notices/USN-4038-4",
+            "https://ubuntu.com/security/notices/USN-4146-1",
+            "https://ubuntu.com/security/notices/USN-4146-2",
+            "https://usn.ubuntu.com/4038-1/",
+            "https://usn.ubuntu.com/4038-2/",
+            "https://usn.ubuntu.com/4146-1/",
+            "https://usn.ubuntu.com/4146-2/",
+            "https://www.oracle.com/security-alerts/cpuoct2020.html"
+          ],
+          "PublishedDate": "2019-06-19T23:15:00Z",
+          "LastModifiedDate": "2022-06-27T16:36:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32206",
+          "PkgName": "curl",
+          "InstalledVersion": "7.61.1-22.el8_6.3",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32206",
+          "Title": "curl: HTTP compression denial of service",
+          "Description": "curl < 7.84.0 supports \"chained\" HTTP compression algorithms, meaning that a serverresponse can be compressed multiple times and potentially with different algorithms. The number of acceptable \"links\" in this \"decompression chain\" was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps.The use of such a decompression chain could result in a \"malloc bomb\", makingcurl end up spending enormous amounts of allocated heap memory, or trying toand returning out of memory errors.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32206",
+            "https://curl.se/docs/CVE-2022-32206.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32206",
+            "https://hackerone.com/reports/1570651",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32206",
+            "https://ubuntu.com/security/notices/USN-5495-1"
+          ],
+          "PublishedDate": "2022-07-07T13:15:00Z",
+          "LastModifiedDate": "2022-07-15T03:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32208",
+          "PkgName": "curl",
+          "InstalledVersion": "7.61.1-22.el8_6.3",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32208",
+          "Title": "curl: FTP-KRB bad message verification",
+          "Description": "When curl < 7.84.0 does FTP transfers secured by krb5, it handles message verification failures wrongly. This flaw makes it possible for a Man-In-The-Middle attack to go unnoticed and even allows it to inject data to the client.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 4.3,
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32208",
+            "https://curl.se/docs/CVE-2022-32208.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32208",
+            "https://hackerone.com/reports/1590071",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32208",
+            "https://ubuntu.com/security/notices/USN-5495-1",
+            "https://ubuntu.com/security/notices/USN-5499-1"
+          ],
+          "PublishedDate": "2022-07-07T13:15:00Z",
+          "LastModifiedDate": "2022-07-15T03:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-8905",
+          "PkgName": "file-libs",
+          "InstalledVersion": "5.33-20.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-8905",
+          "Title": "file: stack-based buffer over-read in do_core_note in readelf.c",
+          "Description": "do_core_note in readelf.c in libmagic.a in file 5.35 has a stack-based buffer over-read, related to file_printable, a different vulnerability than CVE-2018-10360.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L",
+              "V2Score": 3.6,
+              "V3Score": 4.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L",
+              "V3Score": 4.4
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-03/msg00027.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00053.html",
+            "http://www.securityfocus.com/bid/107137",
+            "https://access.redhat.com/security/cve/CVE-2019-8905",
+            "https://bugs.astron.com/view.php?id=63",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-8905",
+            "https://lists.debian.org/debian-lts-announce/2019/02/msg00044.html",
+            "https://ubuntu.com/security/notices/USN-3911-1",
+            "https://usn.ubuntu.com/3911-1/"
+          ],
+          "PublishedDate": "2019-02-18T17:29:00Z",
+          "LastModifiedDate": "2021-12-09T19:38:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-8906",
+          "PkgName": "file-libs",
+          "InstalledVersion": "5.33-20.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-8906",
+          "Title": "file: out-of-bounds read in do_core_note in readelf.c",
+          "Description": "do_core_note in readelf.c in libmagic.a in file 5.35 has an out-of-bounds read because memcpy is misused.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L",
+              "V2Score": 3.6,
+              "V3Score": 4.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L",
+              "V3Score": 4.4
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-03/msg00027.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00053.html",
+            "https://access.redhat.com/security/cve/CVE-2019-8906",
+            "https://bugs.astron.com/view.php?id=64",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-8906",
+            "https://github.com/file/file/commit/2858eaf99f6cc5aae129bcbf1e24ad160240185f",
+            "https://support.apple.com/kb/HT209599",
+            "https://support.apple.com/kb/HT209600",
+            "https://support.apple.com/kb/HT209601",
+            "https://support.apple.com/kb/HT209602",
+            "https://ubuntu.com/security/notices/USN-3911-1",
+            "https://usn.ubuntu.com/3911-1/"
+          ],
+          "PublishedDate": "2019-02-18T17:29:00Z",
+          "LastModifiedDate": "2021-12-09T19:44:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-16428",
+          "PkgName": "glib2",
+          "InstalledVersion": "2.56.4-158.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-16428",
+          "Title": "glib2: NULL pointer dereference in g_markup_parse_context_end_parse() function in gmarkup.c",
+          "Description": "In GNOME GLib 2.56.1, g_markup_parse_context_end_parse() in gmarkup.c has a NULL pointer dereference.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2020/02/14/3",
+            "http://www.securityfocus.com/bid/105210",
+            "https://access.redhat.com/security/cve/CVE-2018-16428",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16428",
+            "https://gitlab.gnome.org/GNOME/glib/commit/fccef3cc822af74699cca84cd202719ae61ca3b9",
+            "https://gitlab.gnome.org/GNOME/glib/issues/1364",
+            "https://lists.debian.org/debian-lts-announce/2019/07/msg00029.html",
+            "https://ubuntu.com/security/notices/USN-3767-1",
+            "https://ubuntu.com/security/notices/USN-3767-2",
+            "https://usn.ubuntu.com/3767-1/",
+            "https://usn.ubuntu.com/3767-2/"
+          ],
+          "PublishedDate": "2018-09-04T00:29:00Z",
+          "LastModifiedDate": "2019-07-31T21:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-43618",
+          "PkgName": "gmp",
+          "InstalledVersion": "1:6.1.2-10.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43618",
+          "Title": "gmp: Integer overflow and resultant buffer overflow via crafted input",
+          "Description": "GNU Multiple Precision Arithmetic Library (GMP) through 6.2.1 has an mpz/inp_raw.c integer overflow and resultant buffer overflow via crafted input, leading to a segmentation fault on 32-bit platforms.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-43618",
+            "https://bugs.debian.org/994405",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43618",
+            "https://gmplib.org/list-archives/gmp-bugs/2021-September/005077.html",
+            "https://gmplib.org/repo/gmp-6.2/rev/561a9c25298e",
+            "https://lists.debian.org/debian-lts-announce/2021/12/msg00001.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-43618"
+          ],
+          "PublishedDate": "2021-11-15T04:15:00Z",
+          "LastModifiedDate": "2021-12-16T18:39:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-34903",
+          "PkgName": "gnupg2",
+          "InstalledVersion": "2.2.20-2.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-34903",
+          "Title": "gpg: Signature spoofing via status line injection",
+          "Description": "GnuPG through 2.3.6, in unusual situations where an attacker possesses any secret-key information from a victim's keyring and other constraints (e.g., use of GPGME) are met, allows signature forgery via injection into the status line.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-74"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N",
+              "V2Score": 5.8,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/07/02/1",
+            "https://access.redhat.com/security/cve/CVE-2022-34903",
+            "https://bugs.debian.org/1014157",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-34903",
+            "https://dev.gnupg.org/T6027",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NPTAR76EIZY7NQFENSOZO7U473257OVZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VN63GBTMRWO36Y7BKA2WQHROAKCXKCBL/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-34903",
+            "https://ubuntu.com/security/notices/USN-5503-1",
+            "https://ubuntu.com/security/notices/USN-5503-2",
+            "https://www.debian.org/security/2022/dsa-5174",
+            "https://www.openwall.com/lists/oss-security/2022/06/30/1"
+          ],
+          "PublishedDate": "2022-07-01T22:15:00Z",
+          "LastModifiedDate": "2022-07-22T07:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-4209",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.6.16-4.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-4209",
+          "Title": "GnuTLS: Null pointer dereference in MD_UPDATE",
+          "Description": "A NULL pointer dereference flaw was found in GnuTLS. As Nettle's hash update functions internally call memcpy, providing zero-length input may cause undefined behavior. This flaw leads to a denial of service after authentication in rare circumstances.",
+          "Severity": "LOW",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-4209"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2022-34903",
+          "PkgName": "gpgme",
+          "InstalledVersion": "1.13.1-11.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-34903",
+          "Title": "gpg: Signature spoofing via status line injection",
+          "Description": "GnuPG through 2.3.6, in unusual situations where an attacker possesses any secret-key information from a victim's keyring and other constraints (e.g., use of GPGME) are met, allows signature forgery via injection into the status line.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-74"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N",
+              "V2Score": 5.8,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/07/02/1",
+            "https://access.redhat.com/security/cve/CVE-2022-34903",
+            "https://bugs.debian.org/1014157",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-34903",
+            "https://dev.gnupg.org/T6027",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NPTAR76EIZY7NQFENSOZO7U473257OVZ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VN63GBTMRWO36Y7BKA2WQHROAKCXKCBL/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-34903",
+            "https://ubuntu.com/security/notices/USN-5503-1",
+            "https://ubuntu.com/security/notices/USN-5503-2",
+            "https://www.debian.org/security/2022/dsa-5174",
+            "https://www.openwall.com/lists/oss-security/2022/06/30/1"
+          ],
+          "PublishedDate": "2022-07-01T22:15:00Z",
+          "LastModifiedDate": "2022-07-22T07:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-17049",
+          "PkgName": "krb5-libs",
+          "InstalledVersion": "1.18.2-14.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-17049",
+          "Title": "Kerberos: delegation constrain bypass in S4U2Proxy",
+          "Description": "Kerberos Security Feature Bypass Vulnerability",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 9,
+              "V3Score": 7.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.2
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/11/10/3",
+            "https://access.redhat.com/security/cve/CVE-2020-17049",
+            "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-17049",
+            "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-17049"
+          ],
+          "PublishedDate": "2020-11-11T07:15:00Z",
+          "LastModifiedDate": "2021-11-30T22:22:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-21674",
+          "PkgName": "libarchive",
+          "InstalledVersion": "3.3.3-3.el8_5",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-21674",
+          "Title": "libarchive: heap-based buffer overflow in archive_string_append_from_wcs function in archive_string.c",
+          "Description": "Heap-based buffer overflow in archive_string_append_from_wcs() (archive_string.c) in libarchive-3.4.1dev allows remote attackers to cause a denial of service (out-of-bounds write in heap memory resulting into a crash) via a crafted archive file. NOTE: this only affects users who downloaded the development code from GitHub. Users of the product's official releases are unaffected.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-21674",
+            "https://github.com/libarchive/libarchive/commit/4f085eea879e2be745f4d9bf57e8513ae48157f4",
+            "https://github.com/libarchive/libarchive/issues/1298"
+          ],
+          "PublishedDate": "2020-10-15T15:15:00Z",
+          "LastModifiedDate": "2020-10-26T15:53:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-14166",
+          "PkgName": "libarchive",
+          "InstalledVersion": "3.3.3-3.el8_5",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-14166",
+          "Title": "libarchive: Heap-based buffer over-read in the atol8 function",
+          "Description": "libarchive 3.3.2 allows remote attackers to cause a denial of service (xml_data heap-based buffer over-read and application crash) via a crafted xar archive, related to the mishandling of empty strings in the atol8 function in archive_read_support_format_xar.c.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2017/09/06/5",
+            "https://access.redhat.com/security/cve/CVE-2017-14166",
+            "https://blogs.gentoo.org/ago/2017/09/06/libarchive-heap-based-buffer-overflow-in-xml_data-archive_read_support_format_xar-c/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14166",
+            "https://github.com/libarchive/libarchive/commit/fa7438a0ff4033e4741c807394a9af6207940d71",
+            "https://lists.debian.org/debian-lts-announce/2018/11/msg00037.html",
+            "https://security.gentoo.org/glsa/201908-11",
+            "https://ubuntu.com/security/notices/USN-3736-1",
+            "https://usn.ubuntu.com/3736-1/",
+            "https://www.debian.org/security/2018/dsa-4360"
+          ],
+          "PublishedDate": "2017-09-06T18:29:00Z",
+          "LastModifiedDate": "2019-08-15T18:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-14501",
+          "PkgName": "libarchive",
+          "InstalledVersion": "3.3.3-3.el8_5",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-14501",
+          "Title": "libarchive: Out-of-bounds read in parse_file_info",
+          "Description": "An out-of-bounds read flaw exists in parse_file_info in archive_read_support_format_iso9660.c in libarchive 3.3.2 when extracting a specially crafted iso9660 iso file, related to archive_read_format_iso9660_read_header.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2017-14501",
+            "https://bugs.debian.org/875966",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14501",
+            "https://github.com/libarchive/libarchive/issues/949",
+            "https://lists.debian.org/debian-lts-announce/2018/11/msg00037.html",
+            "https://security.gentoo.org/glsa/201908-11",
+            "https://ubuntu.com/security/notices/USN-3736-1",
+            "https://usn.ubuntu.com/3736-1/",
+            "https://www.debian.org/security/2018/dsa-4360"
+          ],
+          "PublishedDate": "2017-09-17T18:29:00Z",
+          "LastModifiedDate": "2018-12-28T16:29:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-1000879",
+          "PkgName": "libarchive",
+          "InstalledVersion": "3.3.3-3.el8_5",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-1000879",
+          "Title": "libarchive: NULL pointer dereference in ACL parser resulting in a denial of service",
+          "Description": "libarchive version commit 379867ecb330b3a952fb7bfa7bffb7bbd5547205 onwards (release v3.3.0 onwards) contains a CWE-476: NULL Pointer Dereference vulnerability in ACL parser - libarchive/archive_acl.c, archive_acl_from_text_l() that can result in Crash/DoS. This attack appear to be exploitable via the victim must open a specially crafted archive file.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00055.html",
+            "http://www.securityfocus.com/bid/106324",
+            "https://access.redhat.com/security/cve/CVE-2018-1000879",
+            "https://bugs.launchpad.net/ubuntu/+source/libarchive/+bug/1794909",
+            "https://github.com/libarchive/libarchive/pull/1105",
+            "https://github.com/libarchive/libarchive/pull/1105/commits/15bf44fd2c1ad0e3fd87048b3fcc90c4dcff1175",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CBOCC2M6YGPZA6US43YK4INPSJZZHRTG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/W645KCLWFDBDGFJHG57WOVXGE62QSIJI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZVXA7PHINVT6DFF6PRLTDTVTXKDLVHNF/"
+          ],
+          "PublishedDate": "2018-12-20T17:29:00Z",
+          "LastModifiedDate": "2019-11-06T15:43:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-1000880",
+          "PkgName": "libarchive",
+          "InstalledVersion": "3.3.3-3.el8_5",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-1000880",
+          "Title": "libarchive: Improper input validation in WARC parser resulting in a denial of service",
+          "Description": "libarchive version commit 9693801580c0cf7c70e862d305270a16b52826a7 onwards (release v3.2.0 onwards) contains a CWE-20: Improper Input Validation vulnerability in WARC parser - libarchive/archive_read_support_format_warc.c, _warc_read() that can result in DoS - quasi-infinite run time and disk usage from tiny file. This attack appear to be exploitable via the victim must open a specially crafted WARC file.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-119"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00055.html",
+            "http://www.securityfocus.com/bid/106324",
+            "https://access.redhat.com/security/cve/CVE-2018-1000880",
+            "https://bugs.launchpad.net/ubuntu/+source/libarchive/+bug/1794909",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000880",
+            "https://github.com/libarchive/libarchive/pull/1105",
+            "https://github.com/libarchive/libarchive/pull/1105/commits/9c84b7426660c09c18cc349f6d70b5f8168b5680",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CBOCC2M6YGPZA6US43YK4INPSJZZHRTG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/W645KCLWFDBDGFJHG57WOVXGE62QSIJI/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZVXA7PHINVT6DFF6PRLTDTVTXKDLVHNF/",
+            "https://ubuntu.com/security/notices/USN-3859-1",
+            "https://usn.ubuntu.com/3859-1/",
+            "https://www.debian.org/security/2018/dsa-4360"
+          ],
+          "PublishedDate": "2018-12-20T17:29:00Z",
+          "LastModifiedDate": "2020-08-24T17:37:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1304",
+          "PkgName": "libcom_err",
+          "InstalledVersion": "1.45.6-4.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1304",
+          "Title": "e2fsprogs: out-of-bounds read/write via crafted filesystem",
+          "Description": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-125",
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:H",
+              "V3Score": 5.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-1304",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2069726",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1304",
+            "https://marc.info/?l=linux-ext4&m=165056234501732&w=2",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
+            "https://ubuntu.com/security/notices/USN-5464-1"
+          ],
+          "PublishedDate": "2022-04-14T21:15:00Z",
+          "LastModifiedDate": "2022-04-21T15:36:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32206",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.61.1-22.el8_6.3",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32206",
+          "Title": "curl: HTTP compression denial of service",
+          "Description": "curl < 7.84.0 supports \"chained\" HTTP compression algorithms, meaning that a serverresponse can be compressed multiple times and potentially with different algorithms. The number of acceptable \"links\" in this \"decompression chain\" was unbounded, allowing a malicious server to insert a virtually unlimited number of compression steps.The use of such a decompression chain could result in a \"malloc bomb\", makingcurl end up spending enormous amounts of allocated heap memory, or trying toand returning out of memory errors.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32206",
+            "https://curl.se/docs/CVE-2022-32206.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32206",
+            "https://hackerone.com/reports/1570651",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32206",
+            "https://ubuntu.com/security/notices/USN-5495-1"
+          ],
+          "PublishedDate": "2022-07-07T13:15:00Z",
+          "LastModifiedDate": "2022-07-15T03:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32208",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.61.1-22.el8_6.3",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32208",
+          "Title": "curl: FTP-KRB bad message verification",
+          "Description": "When curl < 7.84.0 does FTP transfers secured by krb5, it handles message verification failures wrongly. This flaw makes it possible for a Man-In-The-Middle attack to go unnoticed and even allows it to inject data to the client.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 4.3,
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32208",
+            "https://curl.se/docs/CVE-2022-32208.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32208",
+            "https://hackerone.com/reports/1590071",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BEV6BR4MTI3CEWK2YU2HQZUW5FAS3FEY/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32208",
+            "https://ubuntu.com/security/notices/USN-5495-1",
+            "https://ubuntu.com/security/notices/USN-5499-1"
+          ],
+          "PublishedDate": "2022-07-07T13:15:00Z",
+          "LastModifiedDate": "2022-07-15T03:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42694",
+          "PkgName": "libgcc",
+          "InstalledVersion": "8.5.0-10.1.el8_6",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42694",
+          "Title": "Developer environment: Homoglyph characters can lead to trojan source attack",
+          "Description": "** DISPUTED ** An issue was discovered in the character definitions of the Unicode Specification through 14.0. The specification allows an adversary to produce source code identifiers such as function names using homoglyphs that render visually identical to a target identifier. Adversaries can leverage this to inject code via adversarial identifier definitions in upstream software dependencies invoked deceptively in downstream software. NOTE: the Unicode Consortium offers the following alternative approach to presenting this concern. An issue is noted in the nature of international text that can affect applications that implement support for The Unicode Standard (all versions). Unless mitigated, an adversary could produce source code identifiers using homoglyph characters that render visually identical to but are distinct from a target identifier. In this way, an adversary could inject adversarial identifier definitions in upstream software that are not detected by human reviewers and are invoked deceptively in downstream software. The Unicode Consortium has documented this class of security vulnerability in its document, Unicode Technical Report #36, Unicode Security Considerations. The Unicode Consortium also provides guidance on mitigations for this class of issues in Unicode Technical Standard #39, Unicode Security Mechanisms.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 5.1,
+              "V3Score": 8.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/11/01/1",
+            "http://www.openwall.com/lists/oss-security/2021/11/01/6",
+            "http://www.unicode.org/versions/Unicode14.0.0/",
+            "https://access.redhat.com/security/cve/CVE-2021-42694",
+            "https://cwe.mitre.org/data/definitions/1007.html",
+            "https://trojansource.codes",
+            "https://trojansource.codes/",
+            "https://www.kb.cert.org/vuls/id/999008",
+            "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.scyon.nl/post/trojans-in-your-source-code",
+            "https://www.unicode.org/reports/tr36/",
+            "https://www.unicode.org/reports/tr36/#Canonical_Represenation",
+            "https://www.unicode.org/reports/tr39/"
+          ],
+          "PublishedDate": "2021-11-01T04:15:00Z",
+          "LastModifiedDate": "2022-05-12T15:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-27943",
+          "PkgName": "libgcc",
+          "InstalledVersion": "8.5.0-10.1.el8_6",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27943",
+          "Title": ": binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows stack exhaustion in demangle_const",
+          "Description": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-27943",
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=105039",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=28995"
+          ],
+          "PublishedDate": "2022-03-26T13:15:00Z",
+          "LastModifiedDate": "2022-03-31T01:06:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-20657",
+          "PkgName": "libgcc",
+          "InstalledVersion": "8.5.0-10.1.el8_6",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20657",
+          "Title": "libiberty: Memory leak in demangle_template function resulting in a denial of service",
+          "Description": "The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-772"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/106444",
+            "https://access.redhat.com/errata/RHSA-2019:3352",
+            "https://access.redhat.com/security/cve/CVE-2018-20657",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20657",
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=88539",
+            "https://linux.oracle.com/cve/CVE-2018-20657.html",
+            "https://linux.oracle.com/errata/ELSA-2019-3352.html",
+            "https://support.f5.com/csp/article/K62602089"
+          ],
+          "PublishedDate": "2019-01-02T14:29:00Z",
+          "LastModifiedDate": "2019-11-06T01:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-14250",
+          "PkgName": "libgcc",
+          "InstalledVersion": "8.5.0-10.1.el8_6",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-14250",
+          "Title": "binutils: integer overflow in simple-object-elf.c leads to a heap-based buffer overflow",
+          "Description": "An issue was discovered in GNU libiberty, as distributed in GNU Binutils 2.32. simple_object_elf_match in simple-object-elf.c does not check for a zero shstrndx value, leading to an integer overflow and resultant heap-based buffer overflow.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00056.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00057.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-05/msg00058.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00078.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-11/msg00004.html",
+            "http://www.securityfocus.com/bid/109354",
+            "https://access.redhat.com/security/cve/CVE-2019-14250",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14250",
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=90924",
+            "https://gcc.gnu.org/ml/gcc-patches/2019-07/msg01003.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-14250",
+            "https://security.gentoo.org/glsa/202007-39",
+            "https://security.netapp.com/advisory/ntap-20190822-0002/",
+            "https://ubuntu.com/security/notices/USN-4326-1",
+            "https://ubuntu.com/security/notices/USN-4336-1",
+            "https://ubuntu.com/security/notices/USN-4336-2",
+            "https://usn.ubuntu.com/4326-1/",
+            "https://usn.ubuntu.com/4336-1/"
+          ],
+          "PublishedDate": "2019-07-24T04:15:00Z",
+          "LastModifiedDate": "2020-11-02T21:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-12904",
+          "PkgName": "libgcrypt",
+          "InstalledVersion": "1.8.5-7.el8_6",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-12904",
+          "Title": "Libgcrypt: physical addresses being available to other processes leads to a flush-and-reload side-channel attack",
+          "Description": "** DISPUTED ** In Libgcrypt 1.8.4, the C implementation of AES is vulnerable to a flush-and-reload side-channel attack because physical addresses are available to other processes. (The C implementation is used on platforms where an assembly-language implementation is unavailable.) NOTE: the vendor's position is that the issue report cannot be validated because there is no description of an attack.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-310"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 4.3,
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-07/msg00049.html",
+            "https://access.redhat.com/security/cve/CVE-2019-12904",
+            "https://dev.gnupg.org/T4541",
+            "https://github.com/gpg/libgcrypt/commit/a4c561aab1014c3630bc88faf6f5246fee16b020",
+            "https://github.com/gpg/libgcrypt/commit/daedbbb5541cd8ecda1459d3b843ea4d92788762",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+            "https://people.canonical.com/~ubuntu-security/cve/2019/CVE-2019-12904.html"
+          ],
+          "PublishedDate": "2019-06-20T00:15:00Z",
+          "LastModifiedDate": "2021-07-21T11:39:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-44568",
+          "PkgName": "libsolv",
+          "InstalledVersion": "0.7.20-1.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-44568",
+          "Title": "libsolv: heap-overflows in resolve_dependencies function",
+          "Description": "Two heap-overflow vulnerabilities exist in openSUSE/libsolv libsolv through 13 Dec 2020 in the decisionmap variable via the resolve_dependencies function at src/solver.c (line 1940 & line 1995), which could cause a remote Denial of Service.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:N/A:H",
+              "V3Score": 6.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-44568",
+            "https://github.com/openSUSE/libsolv/issues/425",
+            "https://github.com/yangjiageng/PoC/blob/master/libsolv-PoCs/resolve_dependencies-1940",
+            "https://github.com/yangjiageng/PoC/blob/master/libsolv-PoCs/resolve_dependencies-1995"
+          ],
+          "PublishedDate": "2022-02-21T18:15:00Z",
+          "LastModifiedDate": "2022-03-08T14:20:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42694",
+          "PkgName": "libstdc++",
+          "InstalledVersion": "8.5.0-10.1.el8_6",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42694",
+          "Title": "Developer environment: Homoglyph characters can lead to trojan source attack",
+          "Description": "** DISPUTED ** An issue was discovered in the character definitions of the Unicode Specification through 14.0. The specification allows an adversary to produce source code identifiers such as function names using homoglyphs that render visually identical to a target identifier. Adversaries can leverage this to inject code via adversarial identifier definitions in upstream software dependencies invoked deceptively in downstream software. NOTE: the Unicode Consortium offers the following alternative approach to presenting this concern. An issue is noted in the nature of international text that can affect applications that implement support for The Unicode Standard (all versions). Unless mitigated, an adversary could produce source code identifiers using homoglyph characters that render visually identical to but are distinct from a target identifier. In this way, an adversary could inject adversarial identifier definitions in upstream software that are not detected by human reviewers and are invoked deceptively in downstream software. The Unicode Consortium has documented this class of security vulnerability in its document, Unicode Technical Report #36, Unicode Security Considerations. The Unicode Consortium also provides guidance on mitigations for this class of issues in Unicode Technical Standard #39, Unicode Security Mechanisms.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 5.1,
+              "V3Score": 8.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2021/11/01/1",
+            "http://www.openwall.com/lists/oss-security/2021/11/01/6",
+            "http://www.unicode.org/versions/Unicode14.0.0/",
+            "https://access.redhat.com/security/cve/CVE-2021-42694",
+            "https://cwe.mitre.org/data/definitions/1007.html",
+            "https://trojansource.codes",
+            "https://trojansource.codes/",
+            "https://www.kb.cert.org/vuls/id/999008",
+            "https://www.lightbluetouchpaper.org/2021/11/01/trojan-source-invisible-vulnerabilities/",
+            "https://www.scyon.nl/post/trojans-in-your-source-code",
+            "https://www.unicode.org/reports/tr36/",
+            "https://www.unicode.org/reports/tr36/#Canonical_Represenation",
+            "https://www.unicode.org/reports/tr39/"
+          ],
+          "PublishedDate": "2021-11-01T04:15:00Z",
+          "LastModifiedDate": "2022-05-12T15:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-27943",
+          "PkgName": "libstdc++",
+          "InstalledVersion": "8.5.0-10.1.el8_6",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27943",
+          "Title": ": binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows stack exhaustion in demangle_const",
+          "Description": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-27943",
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=105039",
+            "https://sourceware.org/bugzilla/show_bug.cgi?id=28995"
+          ],
+          "PublishedDate": "2022-03-26T13:15:00Z",
+          "LastModifiedDate": "2022-03-31T01:06:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-20657",
+          "PkgName": "libstdc++",
+          "InstalledVersion": "8.5.0-10.1.el8_6",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20657",
+          "Title": "libiberty: Memory leak in demangle_template function resulting in a denial of service",
+          "Description": "The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-772"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/106444",
+            "https://access.redhat.com/errata/RHSA-2019:3352",
+            "https://access.redhat.com/security/cve/CVE-2018-20657",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20657",
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=88539",
+            "https://linux.oracle.com/cve/CVE-2018-20657.html",
+            "https://linux.oracle.com/errata/ELSA-2019-3352.html",
+            "https://support.f5.com/csp/article/K62602089"
+          ],
+          "PublishedDate": "2019-01-02T14:29:00Z",
+          "LastModifiedDate": "2019-11-06T01:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-14250",
+          "PkgName": "libstdc++",
+          "InstalledVersion": "8.5.0-10.1.el8_6",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-14250",
+          "Title": "binutils: integer overflow in simple-object-elf.c leads to a heap-based buffer overflow",
+          "Description": "An issue was discovered in GNU libiberty, as distributed in GNU Binutils 2.32. simple_object_elf_match in simple-object-elf.c does not check for a zero shstrndx value, leading to an integer overflow and resultant heap-based buffer overflow.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00056.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00057.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-05/msg00058.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00078.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-11/msg00004.html",
+            "http://www.securityfocus.com/bid/109354",
+            "https://access.redhat.com/security/cve/CVE-2019-14250",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14250",
+            "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=90924",
+            "https://gcc.gnu.org/ml/gcc-patches/2019-07/msg01003.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-14250",
+            "https://security.gentoo.org/glsa/202007-39",
+            "https://security.netapp.com/advisory/ntap-20190822-0002/",
+            "https://ubuntu.com/security/notices/USN-4326-1",
+            "https://ubuntu.com/security/notices/USN-4336-1",
+            "https://ubuntu.com/security/notices/USN-4336-2",
+            "https://usn.ubuntu.com/4326-1/",
+            "https://usn.ubuntu.com/4336-1/"
+          ],
+          "PublishedDate": "2019-07-24T04:15:00Z",
+          "LastModifiedDate": "2020-11-02T21:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-1000654",
+          "PkgName": "libtasn1",
+          "InstalledVersion": "4.13-3.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-1000654",
+          "Title": "libtasn1: Infinite loop in _asn1_expand_object_id(ptree) leads to memory exhaustion",
+          "Description": "GNU Libtasn1-4.13 libtasn1-4.13 version libtasn1-4.13, libtasn1-4.12 contains a DoS, specifically CPU usage will reach 100% when running asn1Paser against the POC due to an issue in _asn1_expand_object_id(p_tree), after a long time, the program will be killed. This attack appears to be exploitable via parsing a crafted file.",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 7.1,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 4
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00009.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00018.html",
+            "http://www.securityfocus.com/bid/105151",
+            "https://access.redhat.com/security/cve/CVE-2018-1000654",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000654",
+            "https://gitlab.com/gnutls/libtasn1/issues/4",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+            "https://ubuntu.com/security/notices/USN-5352-1"
+          ],
+          "PublishedDate": "2018-08-20T19:31:00Z",
+          "LastModifiedDate": "2021-02-25T17:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-24032",
+          "PkgName": "libzstd",
+          "InstalledVersion": "1.4.4-1.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-24032",
+          "Title": "zstd: Race condition allows attacker to access world-readable destination file",
+          "Description": "Beginning in v1.4.1 and prior to v1.4.9, due to an incomplete fix for CVE-2021-24031, the Zstandard command-line utility created output files with default permissions and restricted those permissions immediately afterwards. Output files could therefore momentarily be readable or writable to unintended parties.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-276"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 1.9,
+              "V3Score": 4.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-24032",
+            "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=982519",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-24032",
+            "https://github.com/facebook/zstd/issues/2491",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-24032",
+            "https://ubuntu.com/security/notices/USN-4760-1",
+            "https://www.facebook.com/security/advisories/cve-2021-24032"
+          ],
+          "PublishedDate": "2021-03-04T21:15:00Z",
+          "LastModifiedDate": "2021-04-28T20:04:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-17543",
+          "PkgName": "lz4-libs",
+          "InstalledVersion": "1.8.3-3.el8_4",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17543",
+          "Title": "lz4: heap-based buffer overflow in LZ4_write32",
+          "Description": "LZ4 before 1.9.2 has a heap-based buffer overflow in LZ4_write32 (related to LZ4_compress_destSize), affecting applications that call LZ4_compress_fast with a large input. (This issue can also lead to data corruption.) NOTE: the vendor states \"only a few specific / uncommon usages of the API are at risk.\"",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00069.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00070.html",
+            "https://access.redhat.com/security/cve/CVE-2019-17543",
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15941",
+            "https://github.com/lz4/lz4/compare/v1.9.1...v1.9.2",
+            "https://github.com/lz4/lz4/issues/801",
+            "https://github.com/lz4/lz4/pull/756",
+            "https://github.com/lz4/lz4/pull/760",
+            "https://lists.apache.org/thread.html/25015588b770d67470b7ba7ea49a305d6735dd7f00eabe7d50ec1e17@%3Cissues.arrow.apache.org%3E",
+            "https://lists.apache.org/thread.html/543302d55e2d2da4311994e9b0debdc676bf3fd05e1a2be3407aa2d6@%3Cissues.arrow.apache.org%3E",
+            "https://lists.apache.org/thread.html/793012683dc0fa6819b7c2560e6cf990811014c40c7d75412099c357@%3Cissues.arrow.apache.org%3E",
+            "https://lists.apache.org/thread.html/9ff0606d16be2ab6a81619e1c9e23c3e251756638e36272c8c8b7fa3@%3Cissues.arrow.apache.org%3E",
+            "https://lists.apache.org/thread.html/f0038c4fab2ee25aee849ebeff6b33b3aa89e07ccfb06b5c87b36316@%3Cissues.arrow.apache.org%3E",
+            "https://lists.apache.org/thread.html/f506bc371d4a068d5d84d7361293568f61167d3a1c3e91f0def2d7d3@%3Cdev.arrow.apache.org%3E",
+            "https://lists.apache.org/thread.html/r0fb226357e7988a241b06b93bab065bcea2eb38658b382e485960e26@%3Cissues.kudu.apache.org%3E",
+            "https://lists.apache.org/thread.html/r4068ba81066792f2b4d208b39c4c4713c5d4c79bd8cb6c1904af5720@%3Cissues.kudu.apache.org%3E",
+            "https://lists.apache.org/thread.html/r7bc72200f94298bc9a0e35637f388deb53467ca4b2e2ad1ff66d8960@%3Cissues.kudu.apache.org%3E",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpuoct2020.html"
+          ],
+          "PublishedDate": "2019-10-14T02:15:00Z",
+          "LastModifiedDate": "2021-07-23T12:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39537",
+          "PkgName": "ncurses-base",
+          "InstalledVersion": "6.1-9.20180224.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
+          "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
+          "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/devel/ncurses/patches/patch-ncurses_tinfo_captoinfo.c?rev=1.1&content-type=text/x-cvsweb-markup",
+            "https://access.redhat.com/security/cve/CVE-2021-39537",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39537",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2021-10/msg00023.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39537",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2021-09-20T16:15:00Z",
+          "LastModifiedDate": "2021-11-30T22:42:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-19211",
+          "PkgName": "ncurses-base",
+          "InstalledVersion": "6.1-9.20180224.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-19211",
+          "Title": "ncurses: Null pointer dereference at function _nc_parse_entry in parse_entry.c",
+          "Description": "In ncurses 6.1, there is a NULL pointer dereference at function _nc_parse_entry in parse_entry.c that will lead to a denial of service attack. The product proceeds to the dereference code path even after a \"dubious character `*' in name or alias field\" detection.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 4.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2018-19211",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1643754",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19211",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2018-11-12T19:29:00Z",
+          "LastModifiedDate": "2019-04-23T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-19217",
+          "PkgName": "ncurses-base",
+          "InstalledVersion": "6.1-9.20180224.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-19217",
+          "Title": "ncurses: Null pointer dereference at function _nc_name_match",
+          "Description": "** DISPUTED ** In ncurses, possibly a 6.x version, there is a NULL pointer dereference at the function _nc_name_match that will lead to a denial of service attack. NOTE: the original report stated version 6.1, but the issue did not reproduce for that version according to the maintainer or a reliable third-party.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 4.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2018-19217",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1643753",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19217",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2019-04/msg00020.html"
+          ],
+          "PublishedDate": "2018-11-12T19:29:00Z",
+          "LastModifiedDate": "2019-04-18T16:29:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39537",
+          "PkgName": "ncurses-libs",
+          "InstalledVersion": "6.1-9.20180224.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
+          "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
+          "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/devel/ncurses/patches/patch-ncurses_tinfo_captoinfo.c?rev=1.1&content-type=text/x-cvsweb-markup",
+            "https://access.redhat.com/security/cve/CVE-2021-39537",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39537",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2021-10/msg00023.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39537",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2021-09-20T16:15:00Z",
+          "LastModifiedDate": "2021-11-30T22:42:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-19211",
+          "PkgName": "ncurses-libs",
+          "InstalledVersion": "6.1-9.20180224.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-19211",
+          "Title": "ncurses: Null pointer dereference at function _nc_parse_entry in parse_entry.c",
+          "Description": "In ncurses 6.1, there is a NULL pointer dereference at function _nc_parse_entry in parse_entry.c that will lead to a denial of service attack. The product proceeds to the dereference code path even after a \"dubious character `*' in name or alias field\" detection.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 4.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2018-19211",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1643754",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19211",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2018-11-12T19:29:00Z",
+          "LastModifiedDate": "2019-04-23T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-19217",
+          "PkgName": "ncurses-libs",
+          "InstalledVersion": "6.1-9.20180224.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-19217",
+          "Title": "ncurses: Null pointer dereference at function _nc_name_match",
+          "Description": "** DISPUTED ** In ncurses, possibly a 6.x version, there is a NULL pointer dereference at the function _nc_name_match that will lead to a denial of service attack. NOTE: the original report stated version 6.1, but the issue did not reproduce for that version according to the maintainer or a reliable third-party.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 4.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2018-19217",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1643753",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19217",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2019-04/msg00020.html"
+          ],
+          "PublishedDate": "2018-11-12T19:29:00Z",
+          "LastModifiedDate": "2019-04-18T16:29:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-8201",
+          "PkgName": "nodejs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8201",
+          "Title": "nodejs: HTTP request smuggling due to CR-to-Hyphen conversion",
+          "Description": "Node.js < 12.18.4 and < 14.11 can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system. The attack was possible due to a bug in processing of carrier-return symbols in the HTTP header names.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00011.html",
+            "https://access.redhat.com/security/cve/CVE-2020-8201",
+            "https://errata.almalinux.org/8/ALSA-2020-4272.html",
+            "https://hackerone.com/reports/922597",
+            "https://linux.oracle.com/cve/CVE-2020-8201.html",
+            "https://linux.oracle.com/errata/ELSA-2020-4272.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4OOYAMJVLLCLXDTHW3V5UXNULZBBK4O6/",
+            "https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/",
+            "https://security.gentoo.org/glsa/202101-07",
+            "https://security.netapp.com/advisory/ntap-20201009-0004/"
+          ],
+          "PublishedDate": "2020-09-18T21:15:00Z",
+          "LastModifiedDate": "2022-05-24T17:24:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-44531",
+          "PkgName": "nodejs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-44531",
+          "Title": "nodejs: Improper handling of URI Subject Alternative Names",
+          "Description": "Accepting arbitrary Subject Alternative Name (SAN) types, unless a PKI is specifically defined to use a particular SAN type, can result in bypassing name-constrained intermediates. Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 was accepting URI SAN types, which PKIs are often not defined to use. Additionally, when a protocol allows URI SANs, Node.js did not match the URI correctly.Versions of Node.js with the fix for this disable the URI SAN type when checking a certificate against a hostname. This behavior can be reverted through the --security-revert command-line option.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-44531",
+            "https://hackerone.com/reports/1429694",
+            "https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-44531",
+            "https://security.netapp.com/advisory/ntap-20220325-0007/",
+            "https://www.debian.org/security/2022/dsa-5170",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html"
+          ],
+          "PublishedDate": "2022-02-24T19:15:00Z",
+          "LastModifiedDate": "2022-06-28T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-0235",
+          "PkgName": "nodejs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0235",
+          "Title": "node-fetch: exposure of sensitive information to an unauthorized actor",
+          "Description": "node-fetch is vulnerable to Exposure of Sensitive Information to an Unauthorized Actor",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V2Score": 5.8,
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-0235",
+            "https://github.com/advisories/GHSA-r683-j2x4-v87g",
+            "https://github.com/node-fetch/node-fetch/commit/36e47e8a6406185921e4985dcbeff140d73eaa10",
+            "https://github.com/node-fetch/node-fetch/commit/5c32f002fdd65b1c6a8f1e3620210813d45c7e60",
+            "https://github.com/node-fetch/node-fetch/pull/1453",
+            "https://huntr.dev/bounties/d26ab655-38d6-48b3-be15-f9ad6b6ae6f7",
+            "https://huntr.dev/bounties/d26ab655-38d6-48b3-be15-f9ad6b6ae6f7/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-0235"
+          ],
+          "PublishedDate": "2022-01-16T17:15:00Z",
+          "LastModifiedDate": "2022-01-25T20:00:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32213",
+          "PkgName": "nodejs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32213",
+          "Title": "nodejs: HTTP request smuggling due to flawed parsing of Transfer-Encoding",
+          "Description": "The llhttp parser in the http module in Node.js v17.x does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32213",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32213",
+            "https://github.com/nodejs/node/commit/d9b71f4c241fa31cc2a48331a4fc28c15937875a (main)",
+            "https://github.com/nodejs/node/commit/da0fda0fe81d372e24c0cb11aec37534985708dd (v14.x)",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/#http-request-smuggling-flawed-parsing-of-transfer-encoding-medium-cve-2022-32213",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32213"
+          ],
+          "PublishedDate": "2022-07-14T15:15:00Z",
+          "LastModifiedDate": "2022-07-21T15:14:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32214",
+          "PkgName": "nodejs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32214",
+          "Title": "nodejs: HTTP request smuggling due to improper delimiting of header fields",
+          "Description": "The llhttp parser in the http module in Node.js does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32214",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32214",
+            "https://github.com/nodejs/node/commit/d9b71f4c241fa31cc2a48331a4fc28c15937875a (main)",
+            "https://github.com/nodejs/node/commit/da0fda0fe81d372e24c0cb11aec37534985708dd (v14.x)",
+            "https://hackerone.com/reports/1524692",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/#http-request-smuggling-improper-delimiting-of-header-fields-medium-cve-2022-32214",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32214"
+          ],
+          "PublishedDate": "2022-07-14T15:15:00Z",
+          "LastModifiedDate": "2022-07-21T15:16:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-33987",
+          "PkgName": "nodejs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-33987",
+          "Title": "got: missing verification of requested URLs allows redirects to UNIX sockets",
+          "Description": "The got package before 12.1.0 (also fixed in 11.8.5) for Node.js allows a redirect to a UNIX socket.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V2Score": 5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-33987",
+            "https://github.com/advisories/GHSA-pfrx-2q88-qq97",
+            "https://github.com/sindresorhus/got/commit/861ccd9ac2237df762a9e2beed7edd88c60782dc",
+            "https://github.com/sindresorhus/got/compare/v12.0.3...v12.1.0",
+            "https://github.com/sindresorhus/got/pull/2047",
+            "https://github.com/sindresorhus/got/releases/tag/v11.8.5",
+            "https://github.com/sindresorhus/got/releases/tag/v12.1.0",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-33987"
+          ],
+          "PublishedDate": "2022-06-18T21:15:00Z",
+          "LastModifiedDate": "2022-06-28T16:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-8201",
+          "PkgName": "nodejs-docs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8201",
+          "Title": "nodejs: HTTP request smuggling due to CR-to-Hyphen conversion",
+          "Description": "Node.js < 12.18.4 and < 14.11 can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system. The attack was possible due to a bug in processing of carrier-return symbols in the HTTP header names.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00011.html",
+            "https://access.redhat.com/security/cve/CVE-2020-8201",
+            "https://errata.almalinux.org/8/ALSA-2020-4272.html",
+            "https://hackerone.com/reports/922597",
+            "https://linux.oracle.com/cve/CVE-2020-8201.html",
+            "https://linux.oracle.com/errata/ELSA-2020-4272.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4OOYAMJVLLCLXDTHW3V5UXNULZBBK4O6/",
+            "https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/",
+            "https://security.gentoo.org/glsa/202101-07",
+            "https://security.netapp.com/advisory/ntap-20201009-0004/"
+          ],
+          "PublishedDate": "2020-09-18T21:15:00Z",
+          "LastModifiedDate": "2022-05-24T17:24:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-44531",
+          "PkgName": "nodejs-docs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-44531",
+          "Title": "nodejs: Improper handling of URI Subject Alternative Names",
+          "Description": "Accepting arbitrary Subject Alternative Name (SAN) types, unless a PKI is specifically defined to use a particular SAN type, can result in bypassing name-constrained intermediates. Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 was accepting URI SAN types, which PKIs are often not defined to use. Additionally, when a protocol allows URI SANs, Node.js did not match the URI correctly.Versions of Node.js with the fix for this disable the URI SAN type when checking a certificate against a hostname. This behavior can be reverted through the --security-revert command-line option.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-44531",
+            "https://hackerone.com/reports/1429694",
+            "https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-44531",
+            "https://security.netapp.com/advisory/ntap-20220325-0007/",
+            "https://www.debian.org/security/2022/dsa-5170",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html"
+          ],
+          "PublishedDate": "2022-02-24T19:15:00Z",
+          "LastModifiedDate": "2022-06-28T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-0235",
+          "PkgName": "nodejs-docs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0235",
+          "Title": "node-fetch: exposure of sensitive information to an unauthorized actor",
+          "Description": "node-fetch is vulnerable to Exposure of Sensitive Information to an Unauthorized Actor",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V2Score": 5.8,
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-0235",
+            "https://github.com/advisories/GHSA-r683-j2x4-v87g",
+            "https://github.com/node-fetch/node-fetch/commit/36e47e8a6406185921e4985dcbeff140d73eaa10",
+            "https://github.com/node-fetch/node-fetch/commit/5c32f002fdd65b1c6a8f1e3620210813d45c7e60",
+            "https://github.com/node-fetch/node-fetch/pull/1453",
+            "https://huntr.dev/bounties/d26ab655-38d6-48b3-be15-f9ad6b6ae6f7",
+            "https://huntr.dev/bounties/d26ab655-38d6-48b3-be15-f9ad6b6ae6f7/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-0235"
+          ],
+          "PublishedDate": "2022-01-16T17:15:00Z",
+          "LastModifiedDate": "2022-01-25T20:00:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32213",
+          "PkgName": "nodejs-docs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32213",
+          "Title": "nodejs: HTTP request smuggling due to flawed parsing of Transfer-Encoding",
+          "Description": "The llhttp parser in the http module in Node.js v17.x does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32213",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32213",
+            "https://github.com/nodejs/node/commit/d9b71f4c241fa31cc2a48331a4fc28c15937875a (main)",
+            "https://github.com/nodejs/node/commit/da0fda0fe81d372e24c0cb11aec37534985708dd (v14.x)",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/#http-request-smuggling-flawed-parsing-of-transfer-encoding-medium-cve-2022-32213",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32213"
+          ],
+          "PublishedDate": "2022-07-14T15:15:00Z",
+          "LastModifiedDate": "2022-07-21T15:14:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32214",
+          "PkgName": "nodejs-docs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32214",
+          "Title": "nodejs: HTTP request smuggling due to improper delimiting of header fields",
+          "Description": "The llhttp parser in the http module in Node.js does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32214",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32214",
+            "https://github.com/nodejs/node/commit/d9b71f4c241fa31cc2a48331a4fc28c15937875a (main)",
+            "https://github.com/nodejs/node/commit/da0fda0fe81d372e24c0cb11aec37534985708dd (v14.x)",
+            "https://hackerone.com/reports/1524692",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/#http-request-smuggling-improper-delimiting-of-header-fields-medium-cve-2022-32214",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32214"
+          ],
+          "PublishedDate": "2022-07-14T15:15:00Z",
+          "LastModifiedDate": "2022-07-21T15:16:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-33987",
+          "PkgName": "nodejs-docs",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-33987",
+          "Title": "got: missing verification of requested URLs allows redirects to UNIX sockets",
+          "Description": "The got package before 12.1.0 (also fixed in 11.8.5) for Node.js allows a redirect to a UNIX socket.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V2Score": 5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-33987",
+            "https://github.com/advisories/GHSA-pfrx-2q88-qq97",
+            "https://github.com/sindresorhus/got/commit/861ccd9ac2237df762a9e2beed7edd88c60782dc",
+            "https://github.com/sindresorhus/got/compare/v12.0.3...v12.1.0",
+            "https://github.com/sindresorhus/got/pull/2047",
+            "https://github.com/sindresorhus/got/releases/tag/v11.8.5",
+            "https://github.com/sindresorhus/got/releases/tag/v12.1.0",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-33987"
+          ],
+          "PublishedDate": "2022-06-18T21:15:00Z",
+          "LastModifiedDate": "2022-06-28T16:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-8201",
+          "PkgName": "nodejs-full-i18n",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8201",
+          "Title": "nodejs: HTTP request smuggling due to CR-to-Hyphen conversion",
+          "Description": "Node.js < 12.18.4 and < 14.11 can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system. The attack was possible due to a bug in processing of carrier-return symbols in the HTTP header names.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00011.html",
+            "https://access.redhat.com/security/cve/CVE-2020-8201",
+            "https://errata.almalinux.org/8/ALSA-2020-4272.html",
+            "https://hackerone.com/reports/922597",
+            "https://linux.oracle.com/cve/CVE-2020-8201.html",
+            "https://linux.oracle.com/errata/ELSA-2020-4272.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4OOYAMJVLLCLXDTHW3V5UXNULZBBK4O6/",
+            "https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/",
+            "https://security.gentoo.org/glsa/202101-07",
+            "https://security.netapp.com/advisory/ntap-20201009-0004/"
+          ],
+          "PublishedDate": "2020-09-18T21:15:00Z",
+          "LastModifiedDate": "2022-05-24T17:24:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-44531",
+          "PkgName": "nodejs-full-i18n",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-44531",
+          "Title": "nodejs: Improper handling of URI Subject Alternative Names",
+          "Description": "Accepting arbitrary Subject Alternative Name (SAN) types, unless a PKI is specifically defined to use a particular SAN type, can result in bypassing name-constrained intermediates. Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 was accepting URI SAN types, which PKIs are often not defined to use. Additionally, when a protocol allows URI SANs, Node.js did not match the URI correctly.Versions of Node.js with the fix for this disable the URI SAN type when checking a certificate against a hostname. This behavior can be reverted through the --security-revert command-line option.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-44531",
+            "https://hackerone.com/reports/1429694",
+            "https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-44531",
+            "https://security.netapp.com/advisory/ntap-20220325-0007/",
+            "https://www.debian.org/security/2022/dsa-5170",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html"
+          ],
+          "PublishedDate": "2022-02-24T19:15:00Z",
+          "LastModifiedDate": "2022-06-28T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-0235",
+          "PkgName": "nodejs-full-i18n",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0235",
+          "Title": "node-fetch: exposure of sensitive information to an unauthorized actor",
+          "Description": "node-fetch is vulnerable to Exposure of Sensitive Information to an Unauthorized Actor",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V2Score": 5.8,
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-0235",
+            "https://github.com/advisories/GHSA-r683-j2x4-v87g",
+            "https://github.com/node-fetch/node-fetch/commit/36e47e8a6406185921e4985dcbeff140d73eaa10",
+            "https://github.com/node-fetch/node-fetch/commit/5c32f002fdd65b1c6a8f1e3620210813d45c7e60",
+            "https://github.com/node-fetch/node-fetch/pull/1453",
+            "https://huntr.dev/bounties/d26ab655-38d6-48b3-be15-f9ad6b6ae6f7",
+            "https://huntr.dev/bounties/d26ab655-38d6-48b3-be15-f9ad6b6ae6f7/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-0235"
+          ],
+          "PublishedDate": "2022-01-16T17:15:00Z",
+          "LastModifiedDate": "2022-01-25T20:00:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32213",
+          "PkgName": "nodejs-full-i18n",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32213",
+          "Title": "nodejs: HTTP request smuggling due to flawed parsing of Transfer-Encoding",
+          "Description": "The llhttp parser in the http module in Node.js v17.x does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32213",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32213",
+            "https://github.com/nodejs/node/commit/d9b71f4c241fa31cc2a48331a4fc28c15937875a (main)",
+            "https://github.com/nodejs/node/commit/da0fda0fe81d372e24c0cb11aec37534985708dd (v14.x)",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/#http-request-smuggling-flawed-parsing-of-transfer-encoding-medium-cve-2022-32213",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32213"
+          ],
+          "PublishedDate": "2022-07-14T15:15:00Z",
+          "LastModifiedDate": "2022-07-21T15:14:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32214",
+          "PkgName": "nodejs-full-i18n",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32214",
+          "Title": "nodejs: HTTP request smuggling due to improper delimiting of header fields",
+          "Description": "The llhttp parser in the http module in Node.js does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32214",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32214",
+            "https://github.com/nodejs/node/commit/d9b71f4c241fa31cc2a48331a4fc28c15937875a (main)",
+            "https://github.com/nodejs/node/commit/da0fda0fe81d372e24c0cb11aec37534985708dd (v14.x)",
+            "https://hackerone.com/reports/1524692",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/#http-request-smuggling-improper-delimiting-of-header-fields-medium-cve-2022-32214",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32214"
+          ],
+          "PublishedDate": "2022-07-14T15:15:00Z",
+          "LastModifiedDate": "2022-07-21T15:16:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-33987",
+          "PkgName": "nodejs-full-i18n",
+          "InstalledVersion": "1:14.18.2-2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-33987",
+          "Title": "got: missing verification of requested URLs allows redirects to UNIX sockets",
+          "Description": "The got package before 12.1.0 (also fixed in 11.8.5) for Node.js allows a redirect to a UNIX socket.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V2Score": 5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-33987",
+            "https://github.com/advisories/GHSA-pfrx-2q88-qq97",
+            "https://github.com/sindresorhus/got/commit/861ccd9ac2237df762a9e2beed7edd88c60782dc",
+            "https://github.com/sindresorhus/got/compare/v12.0.3...v12.1.0",
+            "https://github.com/sindresorhus/got/pull/2047",
+            "https://github.com/sindresorhus/got/releases/tag/v11.8.5",
+            "https://github.com/sindresorhus/got/releases/tag/v12.1.0",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-33987"
+          ],
+          "PublishedDate": "2022-06-18T21:15:00Z",
+          "LastModifiedDate": "2022-06-28T16:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-8201",
+          "PkgName": "nodejs-nodemon",
+          "InstalledVersion": "2.0.15-1.module+el8.5.0+13504+a2e74d91",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8201",
+          "Title": "nodejs: HTTP request smuggling due to CR-to-Hyphen conversion",
+          "Description": "Node.js < 12.18.4 and < 14.11 can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system. The attack was possible due to a bug in processing of carrier-return symbols in the HTTP header names.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00011.html",
+            "https://access.redhat.com/security/cve/CVE-2020-8201",
+            "https://errata.almalinux.org/8/ALSA-2020-4272.html",
+            "https://hackerone.com/reports/922597",
+            "https://linux.oracle.com/cve/CVE-2020-8201.html",
+            "https://linux.oracle.com/errata/ELSA-2020-4272.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4OOYAMJVLLCLXDTHW3V5UXNULZBBK4O6/",
+            "https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/",
+            "https://security.gentoo.org/glsa/202101-07",
+            "https://security.netapp.com/advisory/ntap-20201009-0004/"
+          ],
+          "PublishedDate": "2020-09-18T21:15:00Z",
+          "LastModifiedDate": "2022-05-24T17:24:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-44531",
+          "PkgName": "nodejs-nodemon",
+          "InstalledVersion": "2.0.15-1.module+el8.5.0+13504+a2e74d91",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-44531",
+          "Title": "nodejs: Improper handling of URI Subject Alternative Names",
+          "Description": "Accepting arbitrary Subject Alternative Name (SAN) types, unless a PKI is specifically defined to use a particular SAN type, can result in bypassing name-constrained intermediates. Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 was accepting URI SAN types, which PKIs are often not defined to use. Additionally, when a protocol allows URI SANs, Node.js did not match the URI correctly.Versions of Node.js with the fix for this disable the URI SAN type when checking a certificate against a hostname. This behavior can be reverted through the --security-revert command-line option.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-44531",
+            "https://hackerone.com/reports/1429694",
+            "https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-44531",
+            "https://security.netapp.com/advisory/ntap-20220325-0007/",
+            "https://www.debian.org/security/2022/dsa-5170",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html"
+          ],
+          "PublishedDate": "2022-02-24T19:15:00Z",
+          "LastModifiedDate": "2022-06-28T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-0235",
+          "PkgName": "nodejs-nodemon",
+          "InstalledVersion": "2.0.15-1.module+el8.5.0+13504+a2e74d91",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0235",
+          "Title": "node-fetch: exposure of sensitive information to an unauthorized actor",
+          "Description": "node-fetch is vulnerable to Exposure of Sensitive Information to an Unauthorized Actor",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V2Score": 5.8,
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-0235",
+            "https://github.com/advisories/GHSA-r683-j2x4-v87g",
+            "https://github.com/node-fetch/node-fetch/commit/36e47e8a6406185921e4985dcbeff140d73eaa10",
+            "https://github.com/node-fetch/node-fetch/commit/5c32f002fdd65b1c6a8f1e3620210813d45c7e60",
+            "https://github.com/node-fetch/node-fetch/pull/1453",
+            "https://huntr.dev/bounties/d26ab655-38d6-48b3-be15-f9ad6b6ae6f7",
+            "https://huntr.dev/bounties/d26ab655-38d6-48b3-be15-f9ad6b6ae6f7/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-0235"
+          ],
+          "PublishedDate": "2022-01-16T17:15:00Z",
+          "LastModifiedDate": "2022-01-25T20:00:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32213",
+          "PkgName": "nodejs-nodemon",
+          "InstalledVersion": "2.0.15-1.module+el8.5.0+13504+a2e74d91",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32213",
+          "Title": "nodejs: HTTP request smuggling due to flawed parsing of Transfer-Encoding",
+          "Description": "The llhttp parser in the http module in Node.js v17.x does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32213",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32213",
+            "https://github.com/nodejs/node/commit/d9b71f4c241fa31cc2a48331a4fc28c15937875a (main)",
+            "https://github.com/nodejs/node/commit/da0fda0fe81d372e24c0cb11aec37534985708dd (v14.x)",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/#http-request-smuggling-flawed-parsing-of-transfer-encoding-medium-cve-2022-32213",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32213"
+          ],
+          "PublishedDate": "2022-07-14T15:15:00Z",
+          "LastModifiedDate": "2022-07-21T15:14:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32214",
+          "PkgName": "nodejs-nodemon",
+          "InstalledVersion": "2.0.15-1.module+el8.5.0+13504+a2e74d91",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32214",
+          "Title": "nodejs: HTTP request smuggling due to improper delimiting of header fields",
+          "Description": "The llhttp parser in the http module in Node.js does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32214",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32214",
+            "https://github.com/nodejs/node/commit/d9b71f4c241fa31cc2a48331a4fc28c15937875a (main)",
+            "https://github.com/nodejs/node/commit/da0fda0fe81d372e24c0cb11aec37534985708dd (v14.x)",
+            "https://hackerone.com/reports/1524692",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/#http-request-smuggling-improper-delimiting-of-header-fields-medium-cve-2022-32214",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32214"
+          ],
+          "PublishedDate": "2022-07-14T15:15:00Z",
+          "LastModifiedDate": "2022-07-21T15:16:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-33987",
+          "PkgName": "nodejs-nodemon",
+          "InstalledVersion": "2.0.15-1.module+el8.5.0+13504+a2e74d91",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-33987",
+          "Title": "got: missing verification of requested URLs allows redirects to UNIX sockets",
+          "Description": "The got package before 12.1.0 (also fixed in 11.8.5) for Node.js allows a redirect to a UNIX socket.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V2Score": 5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-33987",
+            "https://github.com/advisories/GHSA-pfrx-2q88-qq97",
+            "https://github.com/sindresorhus/got/commit/861ccd9ac2237df762a9e2beed7edd88c60782dc",
+            "https://github.com/sindresorhus/got/compare/v12.0.3...v12.1.0",
+            "https://github.com/sindresorhus/got/pull/2047",
+            "https://github.com/sindresorhus/got/releases/tag/v11.8.5",
+            "https://github.com/sindresorhus/got/releases/tag/v12.1.0",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-33987"
+          ],
+          "PublishedDate": "2022-06-18T21:15:00Z",
+          "LastModifiedDate": "2022-06-28T16:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-8201",
+          "PkgName": "npm",
+          "InstalledVersion": "1:6.14.15-1.14.18.2.2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8201",
+          "Title": "nodejs: HTTP request smuggling due to CR-to-Hyphen conversion",
+          "Description": "Node.js < 12.18.4 and < 14.11 can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system. The attack was possible due to a bug in processing of carrier-return symbols in the HTTP header names.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00011.html",
+            "https://access.redhat.com/security/cve/CVE-2020-8201",
+            "https://errata.almalinux.org/8/ALSA-2020-4272.html",
+            "https://hackerone.com/reports/922597",
+            "https://linux.oracle.com/cve/CVE-2020-8201.html",
+            "https://linux.oracle.com/errata/ELSA-2020-4272.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4OOYAMJVLLCLXDTHW3V5UXNULZBBK4O6/",
+            "https://nodejs.org/en/blog/vulnerability/september-2020-security-releases/",
+            "https://security.gentoo.org/glsa/202101-07",
+            "https://security.netapp.com/advisory/ntap-20201009-0004/"
+          ],
+          "PublishedDate": "2020-09-18T21:15:00Z",
+          "LastModifiedDate": "2022-05-24T17:24:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-44531",
+          "PkgName": "npm",
+          "InstalledVersion": "1:6.14.15-1.14.18.2.2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-44531",
+          "Title": "nodejs: Improper handling of URI Subject Alternative Names",
+          "Description": "Accepting arbitrary Subject Alternative Name (SAN) types, unless a PKI is specifically defined to use a particular SAN type, can result in bypassing name-constrained intermediates. Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 was accepting URI SAN types, which PKIs are often not defined to use. Additionally, when a protocol allows URI SANs, Node.js did not match the URI correctly.Versions of Node.js with the fix for this disable the URI SAN type when checking a certificate against a hostname. This behavior can be reverted through the --security-revert command-line option.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-295"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-44531",
+            "https://hackerone.com/reports/1429694",
+            "https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-44531",
+            "https://security.netapp.com/advisory/ntap-20220325-0007/",
+            "https://www.debian.org/security/2022/dsa-5170",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html"
+          ],
+          "PublishedDate": "2022-02-24T19:15:00Z",
+          "LastModifiedDate": "2022-06-28T13:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-0235",
+          "PkgName": "npm",
+          "InstalledVersion": "1:6.14.15-1.14.18.2.2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0235",
+          "Title": "node-fetch: exposure of sensitive information to an unauthorized actor",
+          "Description": "node-fetch is vulnerable to Exposure of Sensitive Information to an Unauthorized Actor",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V2Score": 5.8,
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-0235",
+            "https://github.com/advisories/GHSA-r683-j2x4-v87g",
+            "https://github.com/node-fetch/node-fetch/commit/36e47e8a6406185921e4985dcbeff140d73eaa10",
+            "https://github.com/node-fetch/node-fetch/commit/5c32f002fdd65b1c6a8f1e3620210813d45c7e60",
+            "https://github.com/node-fetch/node-fetch/pull/1453",
+            "https://huntr.dev/bounties/d26ab655-38d6-48b3-be15-f9ad6b6ae6f7",
+            "https://huntr.dev/bounties/d26ab655-38d6-48b3-be15-f9ad6b6ae6f7/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-0235"
+          ],
+          "PublishedDate": "2022-01-16T17:15:00Z",
+          "LastModifiedDate": "2022-01-25T20:00:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32213",
+          "PkgName": "npm",
+          "InstalledVersion": "1:6.14.15-1.14.18.2.2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32213",
+          "Title": "nodejs: HTTP request smuggling due to flawed parsing of Transfer-Encoding",
+          "Description": "The llhttp parser in the http module in Node.js v17.x does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32213",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32213",
+            "https://github.com/nodejs/node/commit/d9b71f4c241fa31cc2a48331a4fc28c15937875a (main)",
+            "https://github.com/nodejs/node/commit/da0fda0fe81d372e24c0cb11aec37534985708dd (v14.x)",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/#http-request-smuggling-flawed-parsing-of-transfer-encoding-medium-cve-2022-32213",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32213"
+          ],
+          "PublishedDate": "2022-07-14T15:15:00Z",
+          "LastModifiedDate": "2022-07-21T15:14:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32214",
+          "PkgName": "npm",
+          "InstalledVersion": "1:6.14.15-1.14.18.2.2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32214",
+          "Title": "nodejs: HTTP request smuggling due to improper delimiting of header fields",
+          "Description": "The llhttp parser in the http module in Node.js does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32214",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32214",
+            "https://github.com/nodejs/node/commit/d9b71f4c241fa31cc2a48331a4fc28c15937875a (main)",
+            "https://github.com/nodejs/node/commit/da0fda0fe81d372e24c0cb11aec37534985708dd (v14.x)",
+            "https://hackerone.com/reports/1524692",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/",
+            "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/#http-request-smuggling-improper-delimiting-of-header-fields-medium-cve-2022-32214",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32214"
+          ],
+          "PublishedDate": "2022-07-14T15:15:00Z",
+          "LastModifiedDate": "2022-07-21T15:16:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-33987",
+          "PkgName": "npm",
+          "InstalledVersion": "1:6.14.15-1.14.18.2.2.module+el8.5.0+13644+8d46dafd",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-33987",
+          "Title": "got: missing verification of requested URLs allows redirects to UNIX sockets",
+          "Description": "The got package before 12.1.0 (also fixed in 11.8.5) for Node.js allows a redirect to a UNIX socket.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V2Score": 5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-33987",
+            "https://github.com/advisories/GHSA-pfrx-2q88-qq97",
+            "https://github.com/sindresorhus/got/commit/861ccd9ac2237df762a9e2beed7edd88c60782dc",
+            "https://github.com/sindresorhus/got/compare/v12.0.3...v12.1.0",
+            "https://github.com/sindresorhus/got/pull/2047",
+            "https://github.com/sindresorhus/got/releases/tag/v11.8.5",
+            "https://github.com/sindresorhus/got/releases/tag/v12.1.0",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-33987"
+          ],
+          "PublishedDate": "2022-06-18T21:15:00Z",
+          "LastModifiedDate": "2022-06-28T16:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1292",
+          "PkgName": "openssl",
+          "InstalledVersion": "1:1.1.1k-6.el8_5",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1292",
+          "Title": "openssl: c_rehash script allows command injection",
+          "Description": "The c_rehash script does not properly sanitise shell metacharacters to prevent command injection. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.3 (Affected 3.0.0,3.0.1,3.0.2). Fixed in OpenSSL 1.1.1o (Affected 1.1.1-1.1.1n). Fixed in OpenSSL 1.0.2ze (Affected 1.0.2-1.0.2zd).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-78"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-1292",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1292",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=1ad73b4d27bd8c1b369a3cd453681d3a4f1bb9b2",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=548d3f280a6e737673f5b61fce24bb100108dfeb",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=e5fd1728ef4c7a5bf7c7a7163ca60370460a6e23",
+            "https://lists.debian.org/debian-lts-announce/2022/05/msg00019.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VX4KWHPMKYJL6ZLW4M5IU7E5UV5ZWJQU/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZNU5M7BXMML26G3GPYKFGQYPQDRSNKDD/",
+            "https://mta.openssl.org/pipermail/openssl-announce/2022-May/000224.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1292",
+            "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0011",
+            "https://security.netapp.com/advisory/ntap-20220602-0009/",
+            "https://ubuntu.com/security/notices/USN-5402-1",
+            "https://ubuntu.com/security/notices/USN-5402-2",
+            "https://www.debian.org/security/2022/dsa-5139",
+            "https://www.openssl.org/news/secadv/20220503.txt"
+          ],
+          "PublishedDate": "2022-05-03T16:15:00Z",
+          "LastModifiedDate": "2022-07-14T22:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-2068",
+          "PkgName": "openssl",
+          "InstalledVersion": "1:1.1.1k-6.el8_5",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-2068",
+          "Title": "openssl: the c_rehash script allows command injection",
+          "Description": "In addition to the c_rehash shell command injection identified in CVE-2022-1292, further circumstances where the c_rehash script does not properly sanitise shell metacharacters to prevent command injection were found by code review. When the CVE-2022-1292 was fixed it was not discovered that there are other places in the script where the file names of certificates being hashed were possibly passed to a command executed through the shell. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.4 (Affected 3.0.0,3.0.1,3.0.2,3.0.3). Fixed in OpenSSL 1.1.1p (Affected 1.1.1-1.1.1o). Fixed in OpenSSL 1.0.2zf (Affected 1.0.2-1.0.2ze).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-78"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-2068",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2068",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c9c35870601b4a44d86ddbf512b38df38285cfa",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=7a9c027159fe9e1bbc2cd38a8a2914bff0d5abd9",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9639817dac8bbbaa64d09efad7464ccc405527c7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6WZZBKUHQFGSKGNXXKICSRPL7AMVW5M5/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-2068",
+            "https://security.netapp.com/advisory/ntap-20220707-0008/",
+            "https://ubuntu.com/security/notices/USN-5488-1",
+            "https://ubuntu.com/security/notices/USN-5488-2",
+            "https://www.debian.org/security/2022/dsa-5169",
+            "https://www.openssl.org/news/secadv/20220621.txt"
+          ],
+          "PublishedDate": "2022-06-21T15:15:00Z",
+          "LastModifiedDate": "2022-07-23T04:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-2097",
+          "PkgName": "openssl",
+          "InstalledVersion": "1:1.1.1k-6.el8_5",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-2097",
+          "Title": "openssl: AES OCB fails to encrypt some bytes",
+          "Description": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-326"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-2097",
+            "https://crates.io/crates/openssl-src",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2097",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=919925673d6c9cfed3c1085497f5dfbbed5fc431",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=a98f339ddd7e8f487d6e0088d4a9a42324885a93",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R6CK57NBQFTPUMXAPJURCGXUYT76NQAK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V6567JERRHHJW2GNGJGKDRNHR7SNPZK7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-2097",
+            "https://rustsec.org/advisories/RUSTSEC-2022-0032.html",
+            "https://security.netapp.com/advisory/ntap-20220715-0011/",
+            "https://ubuntu.com/security/notices/USN-5502-1",
+            "https://www.openssl.org/news/secadv/20220705.txt"
+          ],
+          "PublishedDate": "2022-07-05T11:15:00Z",
+          "LastModifiedDate": "2022-07-23T04:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1292",
+          "PkgName": "openssl-libs",
+          "InstalledVersion": "1:1.1.1k-6.el8_5",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1292",
+          "Title": "openssl: c_rehash script allows command injection",
+          "Description": "The c_rehash script does not properly sanitise shell metacharacters to prevent command injection. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.3 (Affected 3.0.0,3.0.1,3.0.2). Fixed in OpenSSL 1.1.1o (Affected 1.1.1-1.1.1n). Fixed in OpenSSL 1.0.2ze (Affected 1.0.2-1.0.2zd).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-78"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-1292",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1292",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=1ad73b4d27bd8c1b369a3cd453681d3a4f1bb9b2",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=548d3f280a6e737673f5b61fce24bb100108dfeb",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=e5fd1728ef4c7a5bf7c7a7163ca60370460a6e23",
+            "https://lists.debian.org/debian-lts-announce/2022/05/msg00019.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VX4KWHPMKYJL6ZLW4M5IU7E5UV5ZWJQU/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZNU5M7BXMML26G3GPYKFGQYPQDRSNKDD/",
+            "https://mta.openssl.org/pipermail/openssl-announce/2022-May/000224.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1292",
+            "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0011",
+            "https://security.netapp.com/advisory/ntap-20220602-0009/",
+            "https://ubuntu.com/security/notices/USN-5402-1",
+            "https://ubuntu.com/security/notices/USN-5402-2",
+            "https://www.debian.org/security/2022/dsa-5139",
+            "https://www.openssl.org/news/secadv/20220503.txt"
+          ],
+          "PublishedDate": "2022-05-03T16:15:00Z",
+          "LastModifiedDate": "2022-07-14T22:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-2068",
+          "PkgName": "openssl-libs",
+          "InstalledVersion": "1:1.1.1k-6.el8_5",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-2068",
+          "Title": "openssl: the c_rehash script allows command injection",
+          "Description": "In addition to the c_rehash shell command injection identified in CVE-2022-1292, further circumstances where the c_rehash script does not properly sanitise shell metacharacters to prevent command injection were found by code review. When the CVE-2022-1292 was fixed it was not discovered that there are other places in the script where the file names of certificates being hashed were possibly passed to a command executed through the shell. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.4 (Affected 3.0.0,3.0.1,3.0.2,3.0.3). Fixed in OpenSSL 1.1.1p (Affected 1.1.1-1.1.1o). Fixed in OpenSSL 1.0.2zf (Affected 1.0.2-1.0.2ze).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-78"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 6.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-2068",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2068",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c9c35870601b4a44d86ddbf512b38df38285cfa",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=7a9c027159fe9e1bbc2cd38a8a2914bff0d5abd9",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9639817dac8bbbaa64d09efad7464ccc405527c7",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6WZZBKUHQFGSKGNXXKICSRPL7AMVW5M5/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-2068",
+            "https://security.netapp.com/advisory/ntap-20220707-0008/",
+            "https://ubuntu.com/security/notices/USN-5488-1",
+            "https://ubuntu.com/security/notices/USN-5488-2",
+            "https://www.debian.org/security/2022/dsa-5169",
+            "https://www.openssl.org/news/secadv/20220621.txt"
+          ],
+          "PublishedDate": "2022-06-21T15:15:00Z",
+          "LastModifiedDate": "2022-07-23T04:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-2097",
+          "PkgName": "openssl-libs",
+          "InstalledVersion": "1:1.1.1k-6.el8_5",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-2097",
+          "Title": "openssl: AES OCB fails to encrypt some bytes",
+          "Description": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p).",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-326"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-2097",
+            "https://crates.io/crates/openssl-src",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2097",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=919925673d6c9cfed3c1085497f5dfbbed5fc431",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=a98f339ddd7e8f487d6e0088d4a9a42324885a93",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R6CK57NBQFTPUMXAPJURCGXUYT76NQAK/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V6567JERRHHJW2GNGJGKDRNHR7SNPZK7/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-2097",
+            "https://rustsec.org/advisories/RUSTSEC-2022-0032.html",
+            "https://security.netapp.com/advisory/ntap-20220715-0011/",
+            "https://ubuntu.com/security/notices/USN-5502-1",
+            "https://www.openssl.org/news/secadv/20220705.txt"
+          ],
+          "PublishedDate": "2022-07-05T11:15:00Z",
+          "LastModifiedDate": "2022-07-23T04:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1586",
+          "PkgName": "pcre2",
+          "InstalledVersion": "10.32-2.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1586",
+          "Title": "pcre2: Out-of-bounds read in compile_xclass_matchingpath in pcre2_jit_compile.c",
+          "Description": "An out-of-bounds read vulnerability was discovered in the PCRE2 library in the compile_xclass_matchingpath() function of the pcre2_jit_compile.c file. This involves a unicode property matching issue in JIT-compiled regular expressions. The issue occurs because the character was not fully read in case-less matching within JIT.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 6.4,
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-1586",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2077976,",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1586",
+            "https://github.com/PCRE2Project/pcre2/commit/50a51cb7e67268e6ad417eb07c9de9bfea5cc55a,",
+            "https://github.com/PCRE2Project/pcre2/commit/d4fa336fbcc388f89095b184ba6d99422cfc676c",
+            "https://linux.oracle.com/cve/CVE-2022-1586.html",
+            "https://linux.oracle.com/errata/ELSA-2022-5251.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DWNG2NS3GINO6LQYUVC4BZLUQPJ3DYHA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JXINO3KKI5DICQ45E2FKD6MKVMGJLEKJ/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAX7767BCUFC7JMDGP7GOQ5GIZCAUGBB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M2GLQQUEY5VFM57CFYXVIFOXN2HUZPDM/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1586"
+          ],
+          "PublishedDate": "2022-05-16T21:15:00Z",
+          "LastModifiedDate": "2022-06-02T14:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35937",
+          "PkgName": "rpm",
+          "InstalledVersion": "4.14.3-23.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35937",
+          "Title": "rpm: TOCTOU race in checks for unsafe symlinks",
+          "Description": "A race condition vulnerability was found in rpm. A local unprivileged user could use this flaw to bypass the checks that were introduced in response to CVE-2017-7500 and CVE-2017-7501, potentially gaining root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-35937"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35938",
+          "PkgName": "rpm",
+          "InstalledVersion": "4.14.3-23.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35938",
+          "Title": "rpm: races with chown/chmod/capabilities calls during installation",
+          "Description": "A symbolic link issue was found in rpm. It occurs when rpm sets the desired permissions and credentials after installing a file. A local unprivileged user could use this flaw to exchange the original file with a symbolic link to a security-critical file and escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-35938"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35939",
+          "PkgName": "rpm",
+          "InstalledVersion": "4.14.3-23.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35939",
+          "Title": "rpm: checks for unsafe symlinks are not performed for intermediary directories",
+          "Description": "It was found that the fix for CVE-2017-7500 and CVE-2017-7501 was incomplete: the check was only implemented for the parent directory of the file to be created. A local unprivileged user who owns another ancestor directory could potentially use this flaw to gain root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-35939"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35937",
+          "PkgName": "rpm-libs",
+          "InstalledVersion": "4.14.3-23.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35937",
+          "Title": "rpm: TOCTOU race in checks for unsafe symlinks",
+          "Description": "A race condition vulnerability was found in rpm. A local unprivileged user could use this flaw to bypass the checks that were introduced in response to CVE-2017-7500 and CVE-2017-7501, potentially gaining root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-35937"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35938",
+          "PkgName": "rpm-libs",
+          "InstalledVersion": "4.14.3-23.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35938",
+          "Title": "rpm: races with chown/chmod/capabilities calls during installation",
+          "Description": "A symbolic link issue was found in rpm. It occurs when rpm sets the desired permissions and credentials after installing a file. A local unprivileged user could use this flaw to exchange the original file with a symbolic link to a security-critical file and escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-35938"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-35939",
+          "PkgName": "rpm-libs",
+          "InstalledVersion": "4.14.3-23.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-35939",
+          "Title": "rpm: checks for unsafe symlinks are not performed for intermediary directories",
+          "Description": "It was found that the fix for CVE-2017-7500 and CVE-2017-7501 was incomplete: the check was only implemented for the parent directory of the file to be created. A local unprivileged user who owns another ancestor directory could potentially use this flaw to gain root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-35939"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2022-35737",
+          "PkgName": "sqlite-libs",
+          "InstalledVersion": "3.26.0-15.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-35737",
+          "Title": "sqlite: assertion failure via query when compiled with -DSQLITE_ENABLE_STAT4",
+          "Description": "No description is available for this CVE.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 6.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-35737"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2019-19244",
+          "PkgName": "sqlite-libs",
+          "InstalledVersion": "3.26.0-15.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-19244",
+          "Title": "sqlite: allows a crash if a sub-select uses both DISTINCT and window functions and also has certain ORDER BY usage",
+          "Description": "sqlite3Select in select.c in SQLite 3.30.1 allows a crash if a sub-select uses both DISTINCT and window functions, and also has certain ORDER BY usage.",
+          "Severity": "LOW",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2019-19244",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19244",
+            "https://github.com/sqlite/sqlite/commit/e59c562b3f6894f84c715772c4b116d7b5c01348",
+            "https://ubuntu.com/security/notices/USN-4205-1",
+            "https://usn.ubuntu.com/4205-1/",
+            "https://www.oracle.com/security-alerts/cpuapr2020.html"
+          ],
+          "PublishedDate": "2019-11-25T20:15:00Z",
+          "LastModifiedDate": "2022-04-15T16:12:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-9936",
+          "PkgName": "sqlite-libs",
+          "InstalledVersion": "3.26.0-15.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-9936",
+          "Title": "sqlite: heap-based buffer over-read in function fts5HashEntrySort in sqlite3.c",
+          "Description": "In SQLite 3.27.2, running fts5 prefix queries inside a transaction could trigger a heap-based buffer over-read in fts5HashEntrySort in sqlite3.c, which may lead to an information leak. This is related to ext/fts5/fts5_hash.c.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-05/msg00026.html",
+            "http://www.securityfocus.com/bid/107562",
+            "https://access.redhat.com/security/cve/CVE-2019-9936",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9936",
+            "https://lists.debian.org/debian-lts-announce/2020/08/msg00037.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EXD2GYJVTDGEQPUNMMMC5TB7MQXOBBMO/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N66U5PY5UJU4XBFZJH7QNKIDNAVIB4OP/",
+            "https://security.gentoo.org/glsa/201908-09",
+            "https://security.netapp.com/advisory/ntap-20190416-0005/",
+            "https://sqlite.org/src/info/b3fa58dd7403dbd4",
+            "https://ubuntu.com/security/notices/USN-4019-1",
+            "https://usn.ubuntu.com/4019-1/",
+            "https://www.mail-archive.com/sqlite-users@mailinglists.sqlite.org/msg114382.html",
+            "https://www.mail-archive.com/sqlite-users@mailinglists.sqlite.org/msg114394.html",
+            "https://www.oracle.com/security-alerts/cpujan2020.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html"
+          ],
+          "PublishedDate": "2019-03-22T08:29:00Z",
+          "LastModifiedDate": "2020-08-23T01:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-9937",
+          "PkgName": "sqlite-libs",
+          "InstalledVersion": "3.26.0-15.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-9937",
+          "Title": "sqlite: null-pointer dereference in function fts5ChunkIterate in sqlite3.c",
+          "Description": "In SQLite 3.27.2, interleaving reads and writes in a single transaction with an fts5 virtual table will lead to a NULL Pointer Dereference in fts5ChunkIterate in sqlite3.c. This is related to ext/fts5/fts5_hash.c and ext/fts5/fts5_index.c.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-05/msg00026.html",
+            "http://www.securityfocus.com/bid/107562",
+            "https://access.redhat.com/security/cve/CVE-2019-9937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9937",
+            "https://lists.debian.org/debian-lts-announce/2020/08/msg00037.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EXD2GYJVTDGEQPUNMMMC5TB7MQXOBBMO/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N66U5PY5UJU4XBFZJH7QNKIDNAVIB4OP/",
+            "https://security.gentoo.org/glsa/201908-09",
+            "https://security.netapp.com/advisory/ntap-20190416-0005/",
+            "https://sqlite.org/src/info/45c73deb440496e8",
+            "https://ubuntu.com/security/notices/USN-4019-1",
+            "https://usn.ubuntu.com/4019-1/",
+            "https://www.mail-archive.com/sqlite-users@mailinglists.sqlite.org/msg114383.html",
+            "https://www.mail-archive.com/sqlite-users@mailinglists.sqlite.org/msg114393.html",
+            "https://www.oracle.com/security-alerts/cpujan2020.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html"
+          ],
+          "PublishedDate": "2019-03-22T08:29:00Z",
+          "LastModifiedDate": "2020-08-23T01:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-20839",
+          "PkgName": "systemd-libs",
+          "InstalledVersion": "239-58.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20839",
+          "Title": "systemd: mishandling of the current keyboard mode check leading to passwords being disclosed in cleartext to attacker",
+          "Description": "systemd 242 changes the VT1 mode upon a logout, which allows attackers to read cleartext passwords in certain circumstances, such as watching a shutdown, or using Ctrl-Alt-F1 and Ctrl-Alt-F2. This occurs because the KDGKBMODE (aka current keyboard mode) check is mishandled.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 4.3,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:P/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 6.4
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/108389",
+            "https://access.redhat.com/security/cve/CVE-2018-20839",
+            "https://bugs.launchpad.net/ubuntu/+source/systemd/+bug/1803993",
+            "https://github.com/systemd/systemd/commit/9725f1a10f80f5e0ae7d9b60547458622aeb322f",
+            "https://github.com/systemd/systemd/pull/12378",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+            "https://security.netapp.com/advisory/ntap-20190530-0002/"
+          ],
+          "PublishedDate": "2019-05-17T04:29:00Z",
+          "LastModifiedDate": "2022-02-20T06:10:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3997",
+          "PkgName": "systemd-libs",
+          "InstalledVersion": "239-58.el8",
+          "Layer": {
+            "DiffID": "sha256:647a854c512bad44709221b6b0973e884f29bcb5a380ee32e95bfb0189b620e6"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3997",
+          "Title": "systemd: Uncontrolled recursion in systemd-tmpfiles when removing files",
+          "Description": "A flaw was found in systemd. An uncontrolled recursion in systemd-tmpfiles may lead to a denial of service at boot time when too many nested directories are created in /tmp.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-3997",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3997",
+            "https://ubuntu.com/security/notices/USN-5226-1",
+            "https://www.openwall.com/lists/oss-security/2022/01/10/2"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2005-2541",
+          "PkgName": "tar",
+          "InstalledVersion": "2:1.30-5.el8",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2005-2541",
+          "Title": "tar: does not properly warn the user when extracting setuid or setgid files",
+          "Description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V2Score": 10
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "http://marc.info/?l=bugtraq&m=112327628230258&w=2",
+            "https://access.redhat.com/security/cve/CVE-2005-2541",
+            "https://lists.apache.org/thread.html/rc713534b10f9daeee2e0990239fa407e2118e4aa9e88a7041177497c@%3Cissues.guacamole.apache.org%3E"
+          ],
+          "PublishedDate": "2005-08-10T04:00:00Z",
+          "LastModifiedDate": "2021-06-18T15:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-9923",
+          "PkgName": "tar",
+          "InstalledVersion": "2:1.30-5.el8",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-9923",
+          "Title": "tar: null-pointer dereference in pax_decode_header in sparse.c",
+          "Description": "pax_decode_header in sparse.c in GNU Tar before 1.32 had a NULL pointer dereference when parsing certain archives that have malformed extended headers.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://git.savannah.gnu.org/cgit/tar.git/commit/?id=cb07844454d8cc9fb21f53ace75975f91185a120",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00077.html",
+            "http://savannah.gnu.org/bugs/?55369",
+            "https://access.redhat.com/security/cve/CVE-2019-9923",
+            "https://bugs.launchpad.net/ubuntu/+source/tar/+bug/1810241",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9923",
+            "https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E",
+            "https://ubuntu.com/security/notices/USN-4692-1"
+          ],
+          "PublishedDate": "2019-03-22T08:29:00Z",
+          "LastModifiedDate": "2021-06-29T15:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-20193",
+          "PkgName": "tar",
+          "InstalledVersion": "2:1.30-5.el8",
+          "Layer": {
+            "DiffID": "sha256:3c143d28ad66d90b1ca3667700d38f24b9a23d2ae6a47792b88bd28b70521842"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20193",
+          "Title": "tar: Memory leak in read_header() in list.c",
+          "Description": "A flaw was found in the src/list.c of tar 1.33 and earlier. This flaw allows an attacker who can submit a crafted input file to tar to cause uncontrolled consumption of memory. The highest threat from this vulnerability is to system availability.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125",
+            "CWE-401",
+            "CWE-125",
+            "CWE-401"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-20193",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1917565",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20193",
+            "https://git.savannah.gnu.org/cgit/tar.git/commit/?id=d9d4435692150fa8ff68e1b1a473d187cc3fd777",
+            "https://savannah.gnu.org/bugs/?59897",
+            "https://security.gentoo.org/glsa/202105-29",
+            "https://ubuntu.com/security/notices/USN-5329-1"
+          ],
+          "PublishedDate": "2021-03-26T17:15:00Z",
+          "LastModifiedDate": "2021-06-03T18:53:00Z"
+        }
+      ]
+    }
+  ]
+}
